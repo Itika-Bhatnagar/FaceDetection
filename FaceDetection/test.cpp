@@ -19,9 +19,29 @@ void main() {
 void main()
 {
 	VideoCapture video(0);
+	CascadeClassifier facedetect;
 	Mat img;
+	facedetect.load("haarcascade_frontal_default.xml");
+
+	
+
+	
+
+
+	
 	while (true) {
 		video.read(img);
+
+		vector<Rect> faces;
+
+		facedetect.detectMultiScale(img, faces, 1.2, 5);
+
+		for (int i = 0; i < faces.size(); i++) {
+			rectangle(img, faces[i].tl(), faces[i].br(), Scalar(50, 50, 255), 3);
+		}
+
+
+
 		imshow("Frame", img);
 		waitKey(1);
 
