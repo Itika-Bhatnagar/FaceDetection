@@ -24,12 +24,18 @@ int main() {
         cerr << "Error: Cannot open camera" << endl;
         return -1;
     }
+    else {
+        cout << "Camera opened successfully" << endl;
+    }
 
     // Load the cascade classifier
     CascadeClassifier facedetect;
     if (!facedetect.load("haarcascade_frontalface_default.xml")) {
         cerr << "Error: Could not load cascade classifier" << endl;
         return -1;
+    }
+    else {
+        cout << "Cascade classifier loaded successfully" << endl;
     }
 
     Mat img;
@@ -54,6 +60,9 @@ int main() {
             cerr << "OpenCV Exception: " << e.what() << endl;
             continue; // Skip this frame and continue with the next
         }
+
+        // Log the number of faces detected
+        cout << "Number of faces detected: " << faces.size() << endl;
 
         // Draw rectangles around detected faces
         for (size_t i = 0; i < faces.size(); i++) {
