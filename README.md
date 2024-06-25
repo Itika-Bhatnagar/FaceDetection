@@ -20,5 +20,26 @@
 
 
 ## Technology Stack
-* C++ Programming Language:  
- - C++ is chosen for its efficiency, performance, and low-level control, which are crucial for real-time applications like face detection.  
+* *C++ Programming Language:*   
+  * C++ is chosen for its efficiency, performance, and low-level control, which are crucial for real-time applications like face detection.
+* *OpenCV (Open Source Computer Vision Library)*:   
+  * OpenCV is a widely-used open-source library for computer vision tasks. It provides various algorithms and tools necessary for image and video processing, including face detection.
+* *Image and Video Input/Output*:   
+  * OpenCV handles input from image files (using functions like cv::imread) and video streams (using cv::VideoCapture).
+* *Pre-trained Models*:  
+   * For face detection, OpenCV offers pre-trained Haar Cascade classifiers (haarcascade_frontalface_alt.xml) which are trained on large datasets to detect frontal faces accurately
+ 
+
+## Project Structure  
+.
+├── README.md  
+├── Facedetection.sln  
+├── include/ (Header files)
+│ ├── detection.hpp (Header file for face detection)
+├── src/ (Source code)
+│ ├── main.cpp (Main application file)
+├── CMakeLists.txt (CMake configuration file)
+├── haarcascade_frontalface_alt.xml (Haar Cascade classifier file)
+└── images/ (Directory for sample images)
+├── image1.jpg
+├── image2.png
