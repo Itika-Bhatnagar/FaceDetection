@@ -31,15 +31,18 @@
  
 
 ## Project Structure  
-.
-├── README.md  
-├── Facedetection.sln  
-├── include/ (Header files)
-│ ├── detection.hpp (Header file for face detection)
-├── src/ (Source code)
-│ ├── main.cpp (Main application file)
-├── CMakeLists.txt (CMake configuration file)
-├── haarcascade_frontalface_alt.xml (Haar Cascade classifier file)
-└── images/ (Directory for sample images)
-├── image1.jpg
-├── image2.png
+
+## Project File Structure
+
+- **README.md**
+- **build/**
+- **include/**
+  - detection.hpp
+- **src/**
+  - main.cpp
+  - facedetection1.cpp
+  - facedetection2.cpp
+- **haarcascade_frontalface_alt.xml**
+- **images/**
+  - image1.jpg
+  - image2.png
