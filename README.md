@@ -45,13 +45,23 @@
 
 
  ## Low Level Overview of File Structure
- * README.md: Markdown file containing project documentation.
- * FaceDetection.sln: Visual Studio solution file for the project.
- * FaceDetection/: Main project directory.
+ * *README.md*: Markdown file containing project documentation.
+ * *FaceDetection.sln*: Visual Studio solution file for the project.
+ * *FaceDetection/*: Main project directory.
     * img1.jpg: Sample image file 1.  
     * img2.jpg: Sample image file 2.  
     * test.cpp: Test file or additional source file.  
     * FaceDetection.vcxproj: Visual Studio project file.  
     * FaceDetection.vcxproj.filters: Visual Studio project filters file.  
-    * haarcascade_frontalface_alt.xml: Pre-trained Haar Cascade classifier file for face detection.  
+    * haarcascade_frontalface_alt.xml: Pre-trained Haar Cascade classifier file for face detection.
+  
+
+  ## Installation and setup
+
+  * download open cv libray from :https://opencv.org/releases/  
+  * set up the required environment variables.  
+  ```bash
+git clone https://github.com/Itika-Bhatnagar/FaceDetection.git  
+```  
+    
 
