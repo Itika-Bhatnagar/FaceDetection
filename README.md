@@ -59,9 +59,11 @@
   ## Installation and setup
 
   * download open cv libray from :https://opencv.org/releases/  
-  * set up the required environment variables.  
+  * set up the required environment variables.
+  * open the project  
   ```bash
-git clone https://github.com/Itika-Bhatnagar/FaceDetection.git  
-```  
+git clone https://github.com/Itika-Bhatnagar/FaceDetection.git   
+```
+  * run it using local windows debugger option.  
     
 
