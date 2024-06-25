@@ -30,19 +30,28 @@
    * For face detection, OpenCV offers pre-trained Haar Cascade classifiers (haarcascade_frontalface_alt.xml) which are trained on large datasets to detect frontal faces accurately
  
 
-## Project Structure  
 
 ## Project File Structure
 
 - **README.md**
-- **build/**
-- **include/**
-  - detection.hpp
-- **src/**
-  - main.cpp
-  - facedetection1.cpp
-  - facedetection2.cpp
-- **haarcascade_frontalface_alt.xml**
-- **images/**
-  - image1.jpg
-  - image2.png
+- **FaceDetection.sln**  
+- **FaceDetection/**  
+  - img1.jgp  
+  - img2.jgp  
+  - test.cpp  
+  - FaceDetection.vcxproJ   
+  - FaceDetection.vcxproj.filters  
+  - haarcascade_frontalface_alt.xml
+
+
+ ## Low Level Overview of File Structure
+ * README.md: Markdown file containing project documentation.
+ * FaceDetection.sln: Visual Studio solution file for the project.
+ * FaceDetection/: Main project directory.
+    * img1.jpg: Sample image file 1.  
+    * img2.jpg: Sample image file 2.  
+    * test.cpp: Test file or additional source file.  
+    * FaceDetection.vcxproj: Visual Studio project file.  
+    * FaceDetection.vcxproj.filters: Visual Studio project filters file.  
+    * haarcascade_frontalface_alt.xml: Pre-trained Haar Cascade classifier file for face detection.  
+
